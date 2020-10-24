@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .header {
-    color: rgb(141, 99, 43);
+    color: rgb(184, 122, 41);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 9%, rgba(0,212,255,1) 87%); 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -29,12 +29,46 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header h1, header h3 {
-text-shadow: 0px 2px 2px rgba(240, 255, 240, 0.37) ;  
+text-shadow: 0px 2px 2px rgb(49, 49, 49) ;  
+padding: 10px;
+border-bottom: 0.25rem solid rgba(9,9,121,0.3);
+
 }
 
+.container {
+    position: relative;
+}
 .base {
     background-color: cadetblue;
     margin-top: 3rem;
+}
+
+.modal {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    margin: 10% auto 0;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    animation: zoom 0.2s;
+}
+
+.cerrar {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
 }
 
 .polaroid {
@@ -74,25 +108,25 @@ text-shadow: 0px 2px 2px rgba(240, 255, 240, 0.37) ;
 .artemis {
     width: 100%;
     height: 500px;
-    background: url(/assets/images/destroyed-bg.jpg) 0 / cover fixed;
+    background: url(https://raw.githubusercontent.com/ProgrammerDwarf/Brawlhalla-tribute/master/assets/images/destroyed-bg.jpg) 0 / cover fixed;
 }
 
 .azoth {
     width: 100%;
-    background: url(/assets/images/labe-bg.png) 0 / cover fixed;
+    background: url(https://raw.githubusercontent.com/ProgrammerDwarf/Brawlhalla-tribute/master/assets/images/labe-bg.png) 0 / cover fixed;
 }
 
 .faith {
     width: 100%;
-    background: url(/assets/images/plains-bg.jpg) 0 / cover fixed;}
+    background: url(https://raw.githubusercontent.com/ProgrammerDwarf/Brawlhalla-tribute/master/assets/images/plains-bg.jpg) 0 / cover fixed;}
 .wu {
     width: 100%;
-    background: url(/assets/images/tree-bg.png) 0 / cover fixed;
+    background: url(https://raw.githubusercontent.com/ProgrammerDwarf/Brawlhalla-tribute/master/assets/images/tree-bg.png) 0 / cover fixed;
 }
 
 .yumiko {
     width: 100%;
-    background: url(/assets/images/destroyed-bg.jpg) 0 / cover fixed;
+    background: url(https://raw.githubusercontent.com/ProgrammerDwarf/Brawlhalla-tribute/master/assets/images/destroyed-bg.jpg) 0 / cover fixed;
 }
 
 .footer {
@@ -108,6 +142,25 @@ text-shadow: 0px 2px 2px rgba(240, 255, 240, 0.37) ;
 .footer span {
     text-transform: uppercase;
     color: rgb(117, 27, 27);
+}
+
+/* animacion */
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    1% {
+        transform: scale(0);
+    }
+    98% {
+        transform: scale(1.1);
+    }
+    99%{
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 @media screen and (min-width: 760px) {
