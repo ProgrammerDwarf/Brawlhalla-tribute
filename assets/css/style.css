@@ -18,7 +18,7 @@ html, body {
 
 body {
     background-color: var(--secunday-color);
-    height: 100%;
+    width: 100%;
     
 }
 
