@@ -78,7 +78,7 @@ header h3{
 }
 
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -116,7 +116,6 @@ header h3{
     overflow: hidden;
     position: relative;
     width: 100%;
-    border-radius: 20px;
 }
 
 .polaroid img {
@@ -145,7 +144,6 @@ header h3{
 
 .artemis {
     width: 100%;
-    height: 500px;
     background: url(https://raw.githubusercontent.com/ProgrammerDwarf/Brawlhalla-tribute/master/assets/images/destroyed-bg.jpg) 0 / cover fixed;
 }
 
@@ -232,6 +230,7 @@ header h3{
         height: auto;
         margin: 2%;
         width: 29%;
+        border-radius: 5px;
 
     }
 
@@ -245,6 +244,7 @@ header h3{
     .polaroid img {
         height: auto;
         width: 50%;
+        cursor: pointer;
 
      }
 
